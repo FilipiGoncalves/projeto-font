@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link th:href="@{style.css}" rel="stylesheet" />
+    <title>Página Teste</title>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-400 min-h-screen flex items-center justify-center">
+
+    <div class="bg-white rounded-lg shadow-xl o-10 w-full max-w-md ">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Cadastro</h2>
+
+        <form method="post" th:action="@{/create}" th:object="${pessoa}" class="space-y-6">
+            <div>
+                <label th:for="nome" class="block text-sm font-medium text-gray-700">Nome</label>
+                <input type="text" id="nome" name="nome" class="mt-1 block w-full px-4 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+            <div>
+                <label th:for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+                <input type="text" id="email" name="email" class="mt-1 block w-full px-4 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+            <div>
+                <label th:for="usuario" class="block text-sm font-medium text-gray-700">Usuário</label>
+                <input type="text" id="usuario" name="usuario" class="mt-1 block w-full px-4 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
+            </div>
+            <div>
+                <button type="submit" class="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-mb
+d transition duration-300">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
