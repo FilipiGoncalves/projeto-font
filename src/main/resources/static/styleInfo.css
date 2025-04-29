@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #3b84c4, #ffffff);
+  }
+  
+
+  body.dark-mode {
+    background: linear-gradient(135deg, #0a1b52, #000000);
+    color: #f8fafc;
+  }
+  
+
+  .toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .toggle-btn {
+    background-color: linear-gradient(135deg, #ffffff, #0a1b52);
+    color: #1e3a8a;
+    border: none;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  .toggle-btn:hover {
+    background: linear-gradient(135deg, #0a1b52, #60a5fa);
+  }
+  
+  body.dark-mode .toggle-btn {
+    background: linear-gradient(135deg, #0a1b52, #2b3849);
+  }
+  
+  body.dark-mode .toggle-btn:hover {
+    background: linear-gradient(135deg, #525252, #ffffff);
+  }
+  
+
+  .info-container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    width: 400px;
+    text-align: center;
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+  
+  body.dark-mode .info-container {
+    background: #1e293b;
+  }
+  
+
+  .info-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+
+  .info-item {
+    margin-bottom: 20px;
+  }
+  
+  .info-item label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .info-item p {
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  body.dark-mode .info-item p {
+    background: #334155;
+  }
+
+  .btn-sign {
+    background: linear-gradient(135deg, #60a5fa, #93c5fd);
+    padding: 12px 12px;
+    border: none;
+    border-radius: 9999px; 
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(96, 165, 250, 0.4);
+    transition: all 0.3s ease;
+    width: 25%;
+  }
+  
+  .btn-sign:hover {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa); 
+    box-shadow: 0 6px 20px rgba(96, 165, 250, 0.6);
+  }
+  
+
+  body.dark-mode .btn-sign {
+    background: linear-gradient(135deg, #1e40af, #64748b); 
+    color: #f8fafc;
+    box-shadow: 0 4px 14px rgba(30, 58, 138, 0.6);
+  }
+  
+  body.dark-mode .btn-sign:hover {
+    background: linear-gradient(135deg, #1e3a8a, #475569); 
+    box-shadow: 0 6px 20px rgba(30, 58, 138, 0.8);
+  }
+  

@@ -5,43 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link th:href="@{/styleInfo.css}" rel="stylesheet" />
+    <link th:href="@{/style.css}" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Informacao de Candidato</title>
+    <title>Cadastro de Clientes</title>
 </head>
-
-<body class="min-h-screen flex items-center justify-center">
-
+<body>
     <div class="toggle-container">
         <button id="toggleMode" class="toggle-btn">
             🌙
         </button>
-    </div>
+      </div>
 
-    <div class="info-container">
-        <form class="info-form" th:object="${pessoa}">
-            <h1 class="info-title">Informações do Candidato</h1>
+    <div class="cadastro-container">
+        <form method="post" class="sign-form" th:action="@{/create}" th:object="${pessoa}">
+            <h2 class="title">Cadastre-se</h2>
 
-            <div class="info-item">
-                <label>Nome:</label>
-                <p th:text="${pessoa.nome}"></p>
+            <div class="input-group">
+                <input class="label" type="text" id="nome" name="nome" placeholder="Nome" required>
             </div>
-
-            <div class="info-item">
-                <label>E-mail:</label>
-                <p th:text="${pessoa.email}"></p>
+            <div class="input-group">
+                <input class="label" type="email" id="email" name="email" placeholder="E-mail" required>
             </div>
-
-            <div class="info-item">
-                <label>Usuário:</label>
-                <p th:text="${pessoa.usuario}"></p>
+            <div class="input-group">
+                <input class="label" type="text" id="usuario" name="usuario" placeholder="Usuário" required>
             </div>
-
-            <br><br>
-            <button type="button" class="btn-sign"><a class="footer-text" th:href="@{/home}">Voltar</a></button>
+            <div class="input-group">
+                <input class="label" type="password" id="senha" name="senha" placeholder="Senha" required>
+            </div>
+            <div class="input-group">
+                <p class="footer-text-erro">E-mail já cadastrado</p>
+            </div>
+                
+                <button type="submit" class="btn-sign">Cadastrar</button>
+                <p class="footer-text">Já tem uma conta? <a th:href="@{/login}">Faça login</a></p>
         </form>
     </div>
 
@@ -49,6 +48,7 @@
         const toggleButton = document.getElementById('toggleMode');
         const body = document.body;
     
+
         if (localStorage.getItem('theme') === 'dark') {
             body.classList.add('dark-mode');
             toggleButton.textContent = '☀️';
