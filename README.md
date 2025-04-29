@@ -32,3 +32,32 @@ Este é um projeto acadêmico que implementa um sistema de cadastro e login com 
 1. Clone o repositório:
    ```bash
    git clone https://github.com/seu-usuario/seu-repositorio.git
+
+2. Abra o projeto na IDE e execute a classe principal (geralmente Application.java).
+
+3. Acesse no navegador:
+   ```bash
+   Cadastro: http://localhost:8080/home
+   Login: http://localhost:8080/login
+   ```
+   
+4. Banco H2 pode ser acessado em:
+   ```bash
+   http://localhost:8080/h2-console
+   ```
+   
+   Use as configurações:
+   ```bash
+   JDBC URL: jdbc:h2:mem:cadastro
+   Username: admin
+   Password: admin
+   ```
+
+## 🖼️ Prints 
+
+## 🙋 Autor
+- Filipi Mantelato Gonçalves - RGM: 11232100259 
+- Lucas Leite Vieira - RGM: 11222100555
+
+
+
