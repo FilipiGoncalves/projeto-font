@@ -54,6 +54,27 @@ Este é um projeto acadêmico que implementa um sistema de cadastro e login com 
    ```
 
 ## 🖼️ Prints 
+   - Página Inicial - Modo Escuro
+   ![image](https://github.com/user-attachments/assets/d2b70cad-89c0-4e1a-8ab5-9cadbc962698)
+   - Página Inicial - Modo Claro
+   ![image](https://github.com/user-attachments/assets/edf30edd-7864-4b69-b83e-39cc90a45391)
+   - Página Inicial - Todos os campos necessários <br>
+   ![image](https://github.com/user-attachments/assets/b60ed636-20b6-4f3a-97a8-48b890e9157c)
+   - Página Inicial - Erro de e-mail já cadastrado <br>
+   ![image](https://github.com/user-attachments/assets/213ceed4-fc3a-47ad-91ad-b53952703e63)
+   - Página Inicial - Erro de usuário já cadastrado <br>
+   ![image](https://github.com/user-attachments/assets/a8d4cb0c-cda9-48a2-b9c0-ad2471143f83)
+   - Página Login - Senha incorreta <br>
+   ![image](https://github.com/user-attachments/assets/ef4602c9-7e9a-4f72-9ca2-108e7c4ea962)
+   - Página Situação - Login bem sucedido <br>
+   ![image](https://github.com/user-attachments/assets/84f77505-05b5-4098-8f94-d0dec13fb07d)
+
+
+
+
+
+
+
 
 ## 🙋 Autor
 - Filipi Mantelato Gonçalves - RGM: 11232100259 
